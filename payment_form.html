@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+
+    <link rel="stylesheet" href="payment_form.css">
+</head>
+<body>
+    <div class="container">
+        
+        <h1 class="main_header">Payment Form</h1>
+        <hr>
+
+        <form action="form.php">
+
+            <h2>User Details</h2>
+
+            <p>First Name: <input type="text" name="FName" placeholder="Enter First Name"></p>
+
+            <p>Last Name: <input type="text" name="LName" placeholder="Enter Last Name"></p>
+
+            
+            <Fieldset>
+                <legend>Gender</legend>
+                <p>            
+                    <label for="male">
+                    <input type="radio" value="male" name="Gender" id="male">Male
+                    </label>
+                
+                    <label for="female">
+                    <input type="radio" value="Female" name="Gender" id="female">Female
+                    </label>
+                </p>
+            </Fieldset>
+
+            
+            <p>Address: <textarea name="Address" id="Address" cols="100" rows="20" placeholder="Enter Your Address" ?"></textarea></p>
+
+
+            <p>Email: <input type="email" name="email" id="email" placeholder="Enter Email" id=""></p>
+
+
+            <p>Pincode: <input type="number" name="pincode" placeholder="Enter Pincode" id="pincode"></p>
+
+
+            <h2>Payment Details</h2>
+
+            <p>Card Types:             
+                <select name="card_type" id="card_type">
+                    <option value="">-- SELECT CARD TYPE --</option>
+                    <option value="SBI">SBI</option>
+                    <option value="HDFC">HDFC</option>
+                    <option value="KOTAK">KOTAK</option>
+                </select></p>
+
+
+            <p>Card Number: <input type="number" name="card_number" id="card_number" placeholder="xxxx-xxxx-xxxx-xxxx"></p>
+
+
+            <p>Expiration Date:  <input type="date" name="exp_date" id="exp_date"</p>
+
+            
+            <p>CVV:  <input type="password" name="cvv" id="cvv"</p>
+
+
+            <input type="submit" value="Pay Now">
+            <input type="reset">
+
+        </form>
+    </div>
+</body>
+</html>
